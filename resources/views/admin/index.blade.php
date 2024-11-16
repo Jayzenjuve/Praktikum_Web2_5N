@@ -1,4 +1,10 @@
 @extends('layouts.app')
 @section('content')
-  <h1>Selamat Datang</h1>
+  <div class="container p-4">
+    <div class="card">
+      <div class="card-body">
+        <h1>Halo, Selamat datang {{Auth::user() -> name}}</h1>
+      </div>
+    </div>
+  </div>
 @endsection
